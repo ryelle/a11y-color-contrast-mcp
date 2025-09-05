@@ -1,0 +1,29 @@
+{
+	"name": "a11y-color-contrast",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"type": "module",
+	"bin": "./build/index.js",
+	"scripts": {
+		"build": "tsc && chmod 755 build/index.js",
+		"test": "jest"
+	},
+	"files": [
+		"build"
+	],
+	"dependencies": {
+		"@ctrl/tinycolor": "^4.1.0",
+		"@modelcontextprotocol/sdk": "^1.17.5",
+		"zod": "^3.25.76"
+	},
+	"devDependencies": {
+		"@types/node": "^24.3.1",
+		"jest": "^29.7.0",
+		"ts-jest": "^29.4.1",
+		"typescript": "^5.9.2"
+	}
+}
