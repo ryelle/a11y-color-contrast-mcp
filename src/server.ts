@@ -1,7 +1,7 @@
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import * as z from "zod";
-import getContrastRatio from "./utils/get-contrast-ratio.js";
-import isPassingContrast from "./utils/is-passing-contrast.js";
+import getContrastRatio from "./utils/get-contrast-ratio.ts";
+import isPassingContrast from "./utils/is-passing-contrast.ts";
 
 export default function getServer() {
 	const server = new McpServer({

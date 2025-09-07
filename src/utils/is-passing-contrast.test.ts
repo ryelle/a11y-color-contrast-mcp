@@ -1,5 +1,5 @@
 import { describe, expect, test } from "@jest/globals";
-import isPassingContrast from "./is-passing-contrast";
+import isPassingContrast from "./is-passing-contrast.ts";
 
 describe("isPassingContrast", () => {
 	test.each([

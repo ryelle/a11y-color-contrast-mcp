@@ -1,4 +1,4 @@
-import getContrastRatio from "./get-contrast-ratio.js";
+import getContrastRatio from "./get-contrast-ratio.ts";
 
 export default function (
 	colorA: string,

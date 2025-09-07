@@ -1,5 +1,5 @@
 import { describe, expect, test } from "@jest/globals";
-import getContrastRatio from "./get-contrast-ratio";
+import getContrastRatio from "./get-contrast-ratio.ts";
 
 describe("getContrastRatio", () => {
 	test.each([
