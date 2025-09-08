@@ -83,3 +83,34 @@ Install the dependencies with `npm install`. The MCP server itself lives in `src
 - `npm run stdio`: Builds the src files, then starts the stdio server.
 - `npm run serve`: Builds the src files, then starts the http server.
 - `npm run test`: Run the Jest tests.
+
+### http server
+
+This is a work in progress while I figure out if it's worth setting up as a remote server. For now, it's developer-only. Once running (see above), you can access this on port 3000.
+
+Here's an example interaction you can test with a tool like [Insomnia](https://insomnia.rest/).
+
+POST http://localhost:3000/mcp
+
+```json
+{
+  "jsonrpc": "2.0",
+  "method": "tools/call",
+  "params": {
+    "name": "get-color-contrast",
+    "arguments": {
+      "colorA": "#ff0000",
+      "colorB": "#ffffff"
+    }
+  },
+  "id": 1
+}
+```
+
+```
+HTTP/1.1 200 OK
+Content-Type: text/event-stream
+
+event: message
+data: {"result":{"content":[{"type":"text","text":"4.00"}]},"jsonrpc":"2.0","id":1}
+```
