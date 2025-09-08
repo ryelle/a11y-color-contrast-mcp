@@ -81,7 +81,7 @@ Install the dependencies with `npm install`. The MCP server itself lives in `src
 
 - `npm run build`: Builds the src files into build.
 - `npm run stdio`: Builds the src files, then starts the stdio server.
-- `npm run serve`: Builds the src files, then starts the http server.
+- `npm run http`: Builds the src files, then starts the http server.
 - `npm run test`: Run the Jest tests.
 
 ### http server

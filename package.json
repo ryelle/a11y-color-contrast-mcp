@@ -15,8 +15,8 @@
 		"build": "tsc && chmod 755 build/index.js",
 		"prestdio": "npm run build",
 		"stdio": "node ./build/index.js",
-		"preserve": "npm run build",
-		"serve": "node ./build/http.js",
+		"prehttp": "npm run build",
+		"http": "node ./build/http.js",
 		"test": "jest"
 	},
 	"files": [
