@@ -3,7 +3,15 @@
 	"version": "1.0.0",
 	"description": "A simple MCP (Model Context Protocol) server for checking accessible color pairings.",
 	"main": "index.js",
-	"keywords": [],
+	"keywords": [
+		"accessibility",
+		"a11y",
+		"colors",
+		"color-contrast",
+        "wcag",
+		"mcp",
+        "ai-tools"
+	],
 	"author": "ryelle",
 	"license": "MIT",
 	"type": "module",
