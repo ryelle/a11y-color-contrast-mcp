@@ -73,7 +73,7 @@ This package contains a stdio and an http server, though the stdio is the recomm
 
 ### Requirements
 
-- Node v22
+- Node 18+
 
 Install the dependencies with `npm install`. The MCP server itself lives in `src/server.ts`, with the stdio server in `index.ts` and the http server in `http.ts`.
 
