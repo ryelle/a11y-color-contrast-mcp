@@ -1,15 +1,17 @@
 {
-	"name": "a11y-color-contrast",
+	"name": "a11y-color-contrast-mcp",
 	"version": "1.0.0",
 	"description": "",
 	"main": "index.js",
 	"keywords": [],
-	"author": "",
-	"license": "ISC",
+	"author": "ryelle",
+	"license": "MIT",
 	"type": "module",
 	"bin": "./build/index.js",
 	"scripts": {
 		"build": "tsc && chmod 755 build/index.js",
+        "prestdio": "npm run build",
+        "stdio": "node ./build/index.js",
         "preserve": "npm run build",
         "serve": "node ./build/http.js",
 		"test": "jest"
