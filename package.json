@@ -1,6 +1,6 @@
 {
 	"name": "a11y-color-contrast-mcp",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "A simple MCP (Model Context Protocol) server for checking accessible color pairings.",
 	"main": "index.js",
 	"homepage": "https://github.com/ryelle/a11y-color-contrast-mcp/",
