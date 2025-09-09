@@ -3,6 +3,11 @@
 	"version": "1.0.0",
 	"description": "A simple MCP (Model Context Protocol) server for checking accessible color pairings.",
 	"main": "index.js",
+	"homepage": "https://github.com/ryelle/a11y-color-contrast-mcp/",
+	"repository": "git+https://github.com/ryelle/a11y-color-contrast-mcp.git",
+	"bugs": {
+		"url": "https://github.com/ryelle/a11y-color-contrast-mcp/issues"
+	},
 	"keywords": [
 		"accessibility",
 		"a11y",
