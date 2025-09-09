@@ -8,9 +8,9 @@
 		"a11y",
 		"colors",
 		"color-contrast",
-        "wcag",
+		"wcag",
 		"mcp",
-        "ai-tools"
+		"ai-tools"
 	],
 	"author": "ryelle",
 	"license": "MIT",
