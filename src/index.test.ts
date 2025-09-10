@@ -122,14 +122,14 @@ describe("MCP stdio Server", () => {
 
 	test.each([
 		{
-			expected: "#000 have sufficient contrast",
+			expected: "Pass: ",
 			colorA: "#007070",
 			colorB: "#000",
 			level: "AA",
 			size: "large",
 		},
 		{
-			expected: "#000 do not have sufficient contrast",
+			expected: "Fail: ",
 			colorA: "#007070",
 			colorB: "#000",
 			level: "AA",

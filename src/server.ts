@@ -25,7 +25,7 @@ export default function getServer() {
 		"get-color-contrast",
 		{
 			title: "Get Color Contrast",
-			description: "Get the WCAG constrast value between two colors.",
+			description: "Get the WCAG contrast value between two colors.",
 			inputSchema: {
 				colorA: z.string().describe("First color (hex, rgb, hsl, or named color)"),
 				colorB: z.string().describe("Second color (hex, rgb, hsl, or named color)"),
@@ -69,8 +69,8 @@ export default function getServer() {
 
 			return getTextContentResponse(
 				passing
-					? `Colors: ${colorA} and ${colorB} have sufficient contrast`
-					: `Colors: ${colorA} and ${colorB} do not have sufficient contrast`,
+					? `Pass: Colors ${colorA} and ${colorB} have sufficient contrast`
+					: `Fail: Colors ${colorA} and ${colorB} do not have sufficient contrast`,
 			);
 		},
 	);

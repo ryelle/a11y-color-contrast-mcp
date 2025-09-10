@@ -41,7 +41,7 @@ Note, if you use `nvm`, you might need to use the path to the correct `node` and
 
 ### Get Color Contrast
 
-Get the WCAG constrast value between two colors.
+Get the WCAG contrast value between two colors.
 
 **Parameters**
 
