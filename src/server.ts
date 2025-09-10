@@ -1,7 +1,19 @@
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
+import { TextContent } from "@modelcontextprotocol/sdk/types.js";
 import * as z from "zod";
 import getContrastRatio from "./utils/get-contrast-ratio.ts";
 import isPassingContrast from "./utils/is-passing-contrast.ts";
+
+function getTextContentResponse(message: string): { content: TextContent[] } {
+	return {
+		content: [
+			{
+				type: "text",
+				text: message,
+			},
+		],
+	};
+}
 
 export default function getServer() {
 	const server = new McpServer({
@@ -23,24 +35,10 @@ export default function getServer() {
 			const contrast = getContrastRatio(colorA, colorB);
 
 			if (!contrast) {
-				return {
-					content: [
-						{
-							type: "text",
-							text: "Failed to process color data",
-						},
-					],
-				};
+				return getTextContentResponse("Failed to process color data");
 			}
 
-			return {
-				content: [
-					{
-						type: "text",
-						text: contrast.toFixed(2),
-					},
-				],
-			};
+			return getTextContentResponse(contrast.toFixed(2));
 		},
 	);
 
@@ -69,16 +67,11 @@ export default function getServer() {
 		async ({ colorA, colorB, level, size }) => {
 			const passing = isPassingContrast(colorA, colorB, level, size);
 
-			return {
-				content: [
-					{
-						type: "text",
-						text: passing
-							? `Colors: ${colorA} and ${colorB} have sufficient contrast`
-							: `Colors: ${colorA} and ${colorB} do not have sufficient contrast`,
-					},
-				],
-			};
+			return getTextContentResponse(
+				passing
+					? `Colors: ${colorA} and ${colorB} have sufficient contrast`
+					: `Colors: ${colorA} and ${colorB} do not have sufficient contrast`,
+			);
 		},
 	);
 
@@ -125,14 +118,7 @@ export default function getServer() {
 				message = `Color ${color} should not be used, it does not have contrast with either light or dark.`;
 			}
 
-			return {
-				content: [
-					{
-						type: "text",
-						text: message,
-					},
-				],
-			};
+			return getTextContentResponse(message);
 		},
 	);
 
