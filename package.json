@@ -39,7 +39,7 @@
 		"@ctrl/tinycolor": "^4.1.0",
 		"@modelcontextprotocol/sdk": "^1.17.5",
 		"express": "^5.1.0",
-		"zod": "^3.25.76"
+		"zod": "^4.3.6"
 	},
 	"devDependencies": {
 		"@types/express": "^5.0.3",
