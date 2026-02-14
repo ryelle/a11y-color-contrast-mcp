@@ -1,6 +1,6 @@
 # Accessible Color Contrast MCP
 
-![](https://img.shields.io/npm/v/a11y-color-contrast-mcp) ![](https://img.shields.io/npm/l/a11y-color-contrast-mcp)
+[![](https://img.shields.io/npm/v/a11y-color-contrast-mcp)](https://www.npmjs.com/package/a11y-color-contrast-mcp) [![](https://img.shields.io/npm/l/a11y-color-contrast-mcp)](/LICENSE.md)
 
 A simple MCP (Model Context Protocol) server for checking accessible color pairings. This uses the WCAG (Web Content Accessibility Guidelines) contrast algorithm to calculate real contrast ratios, which can inform your AI when working with colors.
 
