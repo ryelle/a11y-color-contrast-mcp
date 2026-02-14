@@ -12,21 +12,21 @@ Add this to your AI platform:
 
 ```json
 {
-  "mcpServers": {
-    "accessibility": {
-      "command": "npx",
-      "args": ["-y", "a11y-color-contrast-mcp"]
-    }
-  }
+	"mcpServers": {
+		"accessibility": {
+			"command": "npx",
+			"args": ["-y", "a11y-color-contrast-mcp"]
+		}
+	}
 }
 ```
 
-Note, if you use `nvm`, you might need to use the path to the correct `node` and `npx` versions (22), for example:
+Note, if you use `nvm`, you might need to use the path to the correct `node` and `npx` versions (24), for example:
 
 ```json
 "accessibility": {
-  "command": "/path-user-home/.nvm/versions/node/v22.9.0/bin/node",
-  "args": ["/path-user-home/.nvm/versions/node/v22.9.0/bin/npx", "-y", "a11y-color-contrast-mcp"]
+  "command": "/path-user-home/.nvm/versions/node/v24.12.0/bin/node",
+  "args": ["/path-user-home/.nvm/versions/node/v24.12.0/bin/npx", "-y", "a11y-color-contrast-mcp"]
 }
 ```
 
@@ -96,16 +96,16 @@ POST http://localhost:3000/mcp
 
 ```json
 {
-  "jsonrpc": "2.0",
-  "method": "tools/call",
-  "params": {
-    "name": "get-color-contrast",
-    "arguments": {
-      "colorA": "#ff0000",
-      "colorB": "#ffffff"
-    }
-  },
-  "id": 1
+	"jsonrpc": "2.0",
+	"method": "tools/call",
+	"params": {
+		"name": "get-color-contrast",
+		"arguments": {
+			"colorA": "#ff0000",
+			"colorB": "#ffffff"
+		}
+	},
+	"id": 1
 }
 ```
 
